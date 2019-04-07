@@ -12,7 +12,7 @@
 <h2>How many trees are located in exposed areas?<g-emoji class="g-emoji" alias="deciduous_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f333.png">🌳</g-emoji></h2>
 
 ```sql
-SELECT distinct traeart, bydelsnavn as 'tree location', byomraade as 'exposed area'  FROM spatialData.treeProperties inner join property on treeProperties.bydelsnavn = property.byomraade;
+SELECT count(distinct traeart) as 'amount of trees in exposed area', bydelsnavn as 'tree location', byomraade as 'exposed area'  FROM spatialData.treeProperties inner join property on treeProperties.bydelsnavn = property.byomraade;
 ```
 
 <h1>Exercise 2</h1>
