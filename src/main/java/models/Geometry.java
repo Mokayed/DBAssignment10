@@ -14,9 +14,9 @@ import java.util.List;
  *
  * @author Hallur
  */
-class Geometry {
+public class Geometry {
     private String type;
-    ArrayList<List<List<List<Double>>>> coordinates;
+    public ArrayList<List<List<List<Double>>>> coordinates;
 
     public String getType() {
         return type;

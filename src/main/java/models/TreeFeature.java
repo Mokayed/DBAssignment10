@@ -13,15 +13,15 @@ import models.OneListGeometry;
  *
  * @author MoK
  */
-class TreeFeature {
+public class TreeFeature {
 
     private String type;
     private String id;
     private OneListGeometry geometry;
     private String geometry_name;
-    private FeatureProperties properties;
+    private TreeFeatureProperties properties;
 
-    public TreeFeature(String type, String id, OneListGeometry geometry, String geometry_name, FeatureProperties properties) {
+    public TreeFeature(String type, String id, OneListGeometry geometry, String geometry_name, TreeFeatureProperties properties) {
         this.type = type;
         this.id = id;
         this.geometry = geometry;
@@ -61,11 +61,11 @@ class TreeFeature {
         this.geometry_name = geometry_name;
     }
 
-    public FeatureProperties getProperties() {
+    public TreeFeatureProperties getProperties() {
         return properties;
     }
 
-    public void setProperties(FeatureProperties properties) {
+    public void setProperties(TreeFeatureProperties properties) {
         this.properties = properties;
     }
 

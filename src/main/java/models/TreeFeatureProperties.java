@@ -10,7 +10,7 @@ package models;
  *
  * @author MoK
  */
-class TreeFeatureProperties {
+public class TreeFeatureProperties {
     private int id;
     private String traeart;
     private String slaegt;
@@ -36,9 +36,9 @@ class TreeFeatureProperties {
     private String saerlig_trae_bem;
     private String bydelsnavn;
     private String fredet_trae_foto;
-    private String vejstatus;
+    private int vejstatus;
 
-    public TreeFeatureProperties(int id, String traeart, String slaegt, String dansk_navn, String slaegtsnav, int planteaar, String plantet_halvaar, String garantiperioden_udloeber, String plantemetode, String ejer, String driftsorganisation, String driftsplan_navn, String driftsaftale_edoc_nr, String bemaerkning, String andre_vaekstforhold, String fredet_beskyttet_trae, String fredning_edoc_nr, String trae_historie, String botanisk_interesse, String donor, String anledning, String saerligt_trae, String saerlig_trae_bem, String bydelsnavn, String fredet_trae_foto, String vejstatus) {
+    public TreeFeatureProperties(int id, String traeart, String slaegt, String dansk_navn, String slaegtsnav, int planteaar, String plantet_halvaar, String garantiperioden_udloeber, String plantemetode, String ejer, String driftsorganisation, String driftsplan_navn, String driftsaftale_edoc_nr, String bemaerkning, String andre_vaekstforhold, String fredet_beskyttet_trae, String fredning_edoc_nr, String trae_historie, String botanisk_interesse, String donor, String anledning, String saerligt_trae, String saerlig_trae_bem, String bydelsnavn, String fredet_trae_foto, int vejstatus) {
         this.id = id;
         this.traeart = traeart;
         this.slaegt = slaegt;
@@ -267,11 +267,11 @@ class TreeFeatureProperties {
         this.fredet_trae_foto = fredet_trae_foto;
     }
 
-    public String getVejstatus() {
+    public int getVejstatus() {
         return vejstatus;
     }
 
-    public void setVejstatus(String vejstatus) {
+    public void setVejstatus(int vejstatus) {
         this.vejstatus = vejstatus;
     }
 
