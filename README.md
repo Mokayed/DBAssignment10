@@ -1,4 +1,7 @@
 # DBAssignment10
+
+<p>We created a system which gets the need endpoints (as GeoJson format) in java, then we added the files data to a sql database</p>
+
 <h1>Setup</h1>
 
 <p>Create a schema with name 'spatialData', then run the following  <a href="https://github.com/Mokayed/DBAssignment10/blob/master/spatialDataDump.sql" rel="nofollow">sql dump file</a>
