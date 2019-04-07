@@ -2,13 +2,13 @@
 
 
 <h1>Exercise 1</h1>
-
+<p>Copy the 
 <h2>How many parks are located in exposed areas?<g-emoji class="g-emoji" alias="fountain" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26f2.png">⛲️</g-emoji><h2>
   
 ```sql 
   SELECT count(*) as 'amount of parks in exposed areas' FROM spatialData.property where delomraade LIKE '%park%';
 ```
-<h3>RESULTS</h3>
+<h3>RESULT:</h3>
 
 <img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query1E1.PNG"/>
 
@@ -17,7 +17,7 @@
 ```sql
 SELECT count(distinct traeart) as 'amount of trees in exposed area', bydelsnavn as 'tree location', byomraade as 'exposed area'  FROM spatialData.treeProperties inner join property on treeProperties.bydelsnavn = property.byomraade;
 ```
-<h3>RESULTS</h3>
+<h3>RESULT:</h3>
 
 <img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query2E1.PNG"/>
 
