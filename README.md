@@ -2,7 +2,8 @@
 
 
 <h1>Exercise 1</h1>
-<p>Create a schema with name 'spatialData', then run the following sql dump file   
+<p>Create a schema with name 'spatialData', then run the following  <a href="https://github.com/Mokayed/DBAssignment10/blob/master/spatialDataDump.sql" rel="nofollow">sql dump file</a>
+  
 <h2>How many parks are located in exposed areas?<g-emoji class="g-emoji" alias="fountain" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26f2.png">⛲️</g-emoji><h2>
   
 ```sql 
