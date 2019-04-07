@@ -27,4 +27,4 @@ SELECT count(distinct traeart) as 'amount of trees in exposed area', bydelsnavn 
 <img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query2E1.PNG"/>
 
 <h1>Exercise 2</h1>
-<p>We maneged to create the needed code in our java project to read the needed endpoints (files) from http://wfs-kbhkort.kk.dk/web/ for the ex2 but we could not come more then that since we run out of time to solve the whole exercise</p>
+<p>We managed  to create the needed code in our java project to read the needed endpoints (files) from http://wfs-kbhkort.kk.dk/web/ for the ex2 but we could not come more then that since we run out of time to solve the whole exercise</p>
