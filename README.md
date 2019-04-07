@@ -8,7 +8,7 @@
   
 <h1>Exercise 1</h1>
   
-<h2>How many parks are located in exposed areas?<g-emoji class="g-emoji" alias="fountain" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26f2.png">⛲️</g-emoji><h2>
+<h2>How many parks are located in exposed areas?<g-emoji class="g-emoji" alias="fountain" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26f2.png">⛲️</g-emoji></h2>
   
   ```sql 
   SELECT count(*) as 'amount of parks in exposed areas' FROM spatialData.property where delomraade LIKE '%park%';
