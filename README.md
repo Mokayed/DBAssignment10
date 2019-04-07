@@ -10,9 +10,9 @@
   
 <h2>How many parks are located in exposed areas?<g-emoji class="g-emoji" alias="fountain" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26f2.png">⛲️</g-emoji><h2>
   
-```sql 
+  ```sql 
   SELECT count(*) as 'amount of parks in exposed areas' FROM spatialData.property where delomraade LIKE '%park%';
-```
+  ```
 <h3>RESULT:</h3>
 
 <img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query1E1.PNG"/>
