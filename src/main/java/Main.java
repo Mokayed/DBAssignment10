@@ -25,9 +25,13 @@ public class Main {
 
         GeoJsonData g = new GeoJsonData();
         ExposedAreas ea = g.getData("http://wfs-kbhkort.kk.dk/k101/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=k101:f_udsatte_byomraader&maxFeatures=50&outputFormat=application%2Fjson");
+
+        
+        System.out.println(ea.getType());
         
         DBConnector c = new DBConnector();
         c.connect("jdbc:mysql://localhost:3306", "root", "123");
- 
+        c.executeQuery(ea);
+
     }
 }
