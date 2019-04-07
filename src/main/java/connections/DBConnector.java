@@ -1,4 +1,9 @@
+package connections;
 
+
+import models.Feature;
+import models.ExposedAreas;
+import connections.SqlScriptCreator;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -78,9 +83,7 @@ public class DBConnector {
             }
             for (int i = 0; i < features.length; i++) {
                 String type = features[i].getType();
-                for (int j = 0; j < features[i].getGeometry().coordinates.size(); j++) {
-                    stmt.execute("insert into exposedAreas.geolocations(type,lattitude,longitude)values('" + type + "'" + ", 123123123.1212, 123123.1231);");
-                }
+     
             }
 
             con.close();

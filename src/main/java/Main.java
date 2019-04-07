@@ -1,4 +1,7 @@
 
+import connections.GeoJsonData;
+import models.ExposedAreas;
+import connections.DBConnector;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;

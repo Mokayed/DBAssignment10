@@ -1,3 +1,8 @@
+package models;
+
+
+import models.TreeGeometry;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -6,16 +11,17 @@
 
 /**
  *
- * @author Hallur
+ * @author MoK
  */
-public class Feature {
+class TreeFeature {
+
     private String type;
     private String id;
-    private Geometry geometry;
+    private TreeGeometry geometry;
     private String geometry_name;
     private FeatureProperties properties;
 
-    public Feature(String type, String id, Geometry geometry, String geometry_name, FeatureProperties properties) {
+    public TreeFeature(String type, String id, TreeGeometry geometry, String geometry_name, FeatureProperties properties) {
         this.type = type;
         this.id = id;
         this.geometry = geometry;
@@ -23,8 +29,6 @@ public class Feature {
         this.properties = properties;
     }
 
-    
-    
     public String getType() {
         return type;
     }
@@ -41,11 +45,11 @@ public class Feature {
         this.id = id;
     }
 
-    public Geometry getGeometry() {
+    public TreeGeometry getGeometry() {
         return geometry;
     }
 
-    public void setGeometry(Geometry geometry) {
+    public void setGeometry(TreeGeometry geometry) {
         this.geometry = geometry;
     }
 
@@ -67,9 +71,8 @@ public class Feature {
 
     @Override
     public String toString() {
-        return "Feature{" + "type=" + type + ", id=" + id + ", geometry=" + geometry + ", geometry_name=" + geometry_name + ", properties=" + properties + '}';
+        return "TreeFeature{" + "type=" + type + ", id=" + id + ", geometry=" + geometry + ", geometry_name=" + geometry_name + ", properties=" + properties + '}';
     }
-    
-    
-    
+
+      
 }

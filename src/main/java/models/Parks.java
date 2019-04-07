@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package models;
 
 /**
  *
- * @author Hallur
+ * @author MoK
  */
-public class ExposedAreas {
+public class Parks {
+
     private String type;
     private int totalFeatures;
-    private Feature[] features;
+    private ParkFeature[] features;
     private Crs crs;
 
-    public ExposedAreas(String type, int totalFeatures, Feature[] Features, Crs crs) {
+    public Parks(String type, int totalFeatures, ParkFeature[] features, Crs crs) {
         this.type = type;
         this.totalFeatures = totalFeatures;
-        this.features = Features;
+        this.features = features;
         this.crs = crs;
     }
 
@@ -37,12 +39,12 @@ public class ExposedAreas {
         this.totalFeatures = totalFeatures;
     }
 
-    public Feature[] getFeatures() {
+    public ParkFeature[] getFeatures() {
         return features;
     }
 
-    public void setFeatures(Feature[] Features) {
-        this.features = Features;
+    public void setFeatures(ParkFeature[] features) {
+        this.features = features;
     }
 
     public Crs getCrs() {
@@ -55,8 +57,7 @@ public class ExposedAreas {
 
     @Override
     public String toString() {
-        return "ExposedAreas{" + "type=" + type + ", totalFeatures=" + totalFeatures + ", Features=" + features + ", crs=" + crs + '}';
+        return "Parks{" + "type=" + type + ", totalFeatures=" + totalFeatures + ", features=" + features + ", crs=" + crs + '}';
     }
-    
-    
+
 }
