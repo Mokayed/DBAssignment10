@@ -11,6 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import models.BikeRack;
 import models.Parks;
 
 /*
@@ -108,6 +109,34 @@ public class GeoJsonData {
         Parks jsonData = null;
         Gson gson = new Gson();
         jsonData = gson.fromJson(json, Parks.class);
+        return jsonData;
+    }
+           public BikeRack getbikeData(String endpoint) throws ProtocolException, MalformedURLException, IOException {
+        String url = endpoint;
+
+        URL obj = new URL(url);
+        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+
+        // optional default is GET
+        con.setRequestMethod("GET");
+
+        int responseCode = con.getResponseCode();
+        System.out.println("\nSending 'GET' request to URL : " + url);
+        System.out.println("Response Code : " + responseCode);
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String inputLine;
+        StringBuffer response = new StringBuffer();
+
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+        }
+        in.close();
+        String json = response.toString();
+        //print result
+        BikeRack jsonData = null;
+        Gson gson = new Gson();
+        jsonData = gson.fromJson(json, BikeRack.class);
         return jsonData;
     }
 }

@@ -1,27 +1,23 @@
-package models;
-
-
-import models.OneListGeometry;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package models;
 
 /**
  *
  * @author MoK
  */
-class TreeFeature {
+class BikeFeature {
 
     private String type;
     private String id;
     private OneListGeometry geometry;
     private String geometry_name;
-    private FeatureProperties properties;
+    private BikesProperties properties;
 
-    public TreeFeature(String type, String id, OneListGeometry geometry, String geometry_name, FeatureProperties properties) {
+    public BikeFeature(String type, String id, OneListGeometry geometry, String geometry_name, BikesProperties properties) {
         this.type = type;
         this.id = id;
         this.geometry = geometry;
@@ -61,18 +57,17 @@ class TreeFeature {
         this.geometry_name = geometry_name;
     }
 
-    public FeatureProperties getProperties() {
+    public BikesProperties getProperties() {
         return properties;
     }
 
-    public void setProperties(FeatureProperties properties) {
+    public void setProperties(BikesProperties properties) {
         this.properties = properties;
     }
 
     @Override
     public String toString() {
-        return "TreeFeature{" + "type=" + type + ", id=" + id + ", geometry=" + geometry + ", geometry_name=" + geometry_name + ", properties=" + properties + '}';
+        return "BikeFeature{" + "type=" + type + ", id=" + id + ", geometry=" + geometry + ", geometry_name=" + geometry_name + ", properties=" + properties + '}';
     }
-
-      
+    
 }

@@ -14,11 +14,11 @@ import java.util.List;
  *
  * @author MoK
  */
-public class TreeGeometry {
+public class OneListGeometry {
       private String type;
     ArrayList<Double> coordinates;
 
-    public TreeGeometry(String type, ArrayList<Double> coordinates) {
+    public OneListGeometry(String type, ArrayList<Double> coordinates) {
         this.type = type;
         this.coordinates = coordinates;
     }
