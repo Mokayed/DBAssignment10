@@ -8,6 +8,7 @@
 ```sql 
   SELECT count(*) as 'amount of parks in exposed areas' FROM spatialData.property where delomraade LIKE '%park%';
 ```
+<h3>RESULTS</h3>
 
 <img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query1E1.PNG"/>
 
@@ -16,6 +17,7 @@
 ```sql
 SELECT count(distinct traeart) as 'amount of trees in exposed area', bydelsnavn as 'tree location', byomraade as 'exposed area'  FROM spatialData.treeProperties inner join property on treeProperties.bydelsnavn = property.byomraade;
 ```
+<h3>RESULTS</h3>
 
 <img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query2E1.PNG"/>
 
