@@ -17,7 +17,7 @@
 SELECT count(distinct traeart) as 'amount of trees in exposed area', bydelsnavn as 'tree location', byomraade as 'exposed area'  FROM spatialData.treeProperties inner join property on treeProperties.bydelsnavn = property.byomraade;
 ```
 
-https://github.com/Mokayed/DBAssignment10/blob/master/Query2E1.PNG
+<img src="https://github.com/Mokayed/DBAssignment10/blob/master/Query2E1.PNG"/>
 
 <h1>Exercise 2</h1>
 <p>We maneged to create the needed code in our java project to read the needed endpoints (files) from http://wfs-kbhkort.kk.dk/web/ for the ex2 but we could not come more then that since we run out of time to solve the whole exercise</p>
